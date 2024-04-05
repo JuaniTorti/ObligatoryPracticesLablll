@@ -3,7 +3,7 @@
 // 1. Dirigidas por Cristopher Nolan.
 // 2. Con un imdbRating > 8.0
 // El arreglo que se devuelve SOLO DEBE CONTENER el nombre de la película, ningún otra información
-// Es obligatorio para este CC resolverlo con la función map()
+// Es obligatorio para este CC resolverlo con la función map().
 
 let watchList = [
   {
