@@ -11,8 +11,8 @@ const compniesMapped = netIncomes.map((company, index) => (
 ));
 
 const companiesAverageIncomes = //para calcular el promedio
-  netIncomes.reduce((average, companie) => {
-    return average + companie.income;
+  netIncomes.reduce((average, company) => {
+    return average + company.income;
   }, 0) / netIncomes.length;
 
 const Companies = () => {
