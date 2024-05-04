@@ -14,9 +14,13 @@ const Login = () => {
     }
   };
 
+  const submitBookHandler = () => {
+    alert("El usuario fue registrado correctamente");
+  };
+
   return (
     <div>
-      <Form className="text-white">
+      <Form className="text-white" onSubmit={submitBookHandler}>
         <Row>
           <Col md={6}>
             <Form.Group className="mb-3" controlId="bookTitle">
