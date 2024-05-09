@@ -14,13 +14,17 @@ const Login = () => {
     }
   };
 
-  const submitBookHandler = () => {
-    alert("El usuario fue registrado correctamente");
+  const submitHandler = () => {
+    if (user.length.trim() == 0) {
+      alert("Ingrese un usuario porfavor");
+    } else {
+      alert("El usuario fue registrado correctamente");
+    }
   };
 
   return (
     <div>
-      <Form className="text-white" onSubmit={submitBookHandler}>
+      <Form className="text-white" onSubmit={submitHandler}>
         <Row>
           <Col md={6}>
             <Form.Group className="mb-3" controlId="bookTitle">
