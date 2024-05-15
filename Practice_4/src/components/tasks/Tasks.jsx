@@ -18,8 +18,8 @@ const Tasks = ({ tasks }) => {
         style={{
           border: "1px solid white",
           borderRadius: "5px",
-          marginLeft: "200px",
-          width: "1000px",
+          marginLeft: "300px",
+          width: "1300px",
         }}
       >
         {tasksMapped}

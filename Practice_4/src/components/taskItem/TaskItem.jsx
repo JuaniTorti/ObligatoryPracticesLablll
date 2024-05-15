@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const TaskItem = ({ task, hour, day }) => {
   return (
-    <Row style={{ border: "1px solid white" }}>
-      <Col>
+    <Row style={{ border: "1px solid white", margin: "10px" }}>
+      <Col style={{ padding: "10px" }}>
         {task} - {hour} - {day}
       </Col>
     </Row>
@@ -14,7 +14,7 @@ const TaskItem = ({ task, hour, day }) => {
 export default TaskItem;
 
 TaskItem.propTypes = {
-  key: PropTypes.string,
+  key: PropTypes.number,
   task: PropTypes.string,
   hour: PropTypes.string,
   day: PropTypes.string,
