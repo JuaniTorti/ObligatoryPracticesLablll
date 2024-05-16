@@ -10,7 +10,12 @@ const TaskItem = ({ id, task, hour, day, deleteTask }) => {
   };
 
   const eliminateTask = () => {
-    deleteTask(id);
+    const confirmed = confirm(
+      "¿Estás seguro de que deseas eliminar esta tarea?"
+    );
+    if (confirmed) {
+      deleteTask(id);
+    }
   };
 
   return (
