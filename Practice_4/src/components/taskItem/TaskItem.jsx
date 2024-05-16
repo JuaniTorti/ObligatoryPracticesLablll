@@ -2,7 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-const TaskItem = ({ task, hour, day, deleteTask }) => {
+const TaskItem = ({ id, task, hour, day, deleteTask }) => {
   const [completada, setCompletada] = useState(false);
 
   const taskCompletada = () => {
@@ -10,7 +10,7 @@ const TaskItem = ({ task, hour, day, deleteTask }) => {
   };
 
   const eliminateTask = () => {
-    deleteTask(task.id);
+    deleteTask(id);
   };
 
   return (
@@ -43,7 +43,6 @@ const TaskItem = ({ task, hour, day, deleteTask }) => {
 export default TaskItem;
 
 TaskItem.propTypes = {
-  key: PropTypes.number,
   id: PropTypes.number,
   task: PropTypes.string,
   hour: PropTypes.string,

@@ -19,10 +19,10 @@ const NewTask = ({ onAddTask }) => {
   const submitTaskHandler = (event) => {
     event.preventDefault();
     const newTask = {
+      id: Math.random(),
       task: task,
       hour: hour,
       day: day,
-      eliminated: false,
     };
 
     setTask("");
