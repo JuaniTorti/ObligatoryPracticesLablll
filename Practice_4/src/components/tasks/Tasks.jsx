@@ -2,13 +2,15 @@ import { Container } from "react-bootstrap";
 import TaskItem from "../taskItem/TaskItem";
 import PropTypes from "prop-types";
 
-const Tasks = ({ tasks }) => {
+const Tasks = ({ tasks, onDeleteTask }) => {
   const tasksMapped = tasks.map((task) => (
     <TaskItem
-      key={Math.random()}
+      key={task.id != null ? task.id : Math.random()}
+      id={task.id != null ? task.id : Math.random()}
       task={task.task}
       hour={task.hour}
       day={task.day}
+      deleteTask={onDeleteTask}
     />
   ));
 

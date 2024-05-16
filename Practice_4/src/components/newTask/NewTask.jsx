@@ -22,6 +22,7 @@ const NewTask = ({ onAddTask }) => {
       task: task,
       hour: hour,
       day: day,
+      eliminated: false,
     };
 
     setTask("");
@@ -44,7 +45,7 @@ const NewTask = ({ onAddTask }) => {
           <Row>
             <Col md={6}>
               <Form.Group className="mb-3">
-                <Form.Label>Tarea</Form.Label>
+                <Form.Label style={{ margin: "10px" }}>Tarea</Form.Label>
                 <Form.Control
                   type="text"
                   required
@@ -56,7 +57,7 @@ const NewTask = ({ onAddTask }) => {
             </Col>
             <Col md={6}>
               <Form.Group className="mb-3">
-                <Form.Label>Hora</Form.Label>
+                <Form.Label style={{ margin: "10px" }}>Hora</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Ingrese hora"
@@ -69,7 +70,7 @@ const NewTask = ({ onAddTask }) => {
           <Row>
             <Col md={6}>
               <Form.Group className="mb-3">
-                <Form.Label>Fecha</Form.Label>
+                <Form.Label style={{ margin: "10px" }}>Fecha</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Ingresar fecha dd/mm"
