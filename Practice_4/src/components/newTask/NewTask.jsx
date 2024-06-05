@@ -23,6 +23,7 @@ const NewTask = ({ onAddTask }) => {
       task: task,
       hour: hour,
       day: day,
+      complete: false,
     };
 
     setTask("");
